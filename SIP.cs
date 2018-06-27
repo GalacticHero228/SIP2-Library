@@ -765,15 +765,15 @@ namespace SIP2
             sender.Receive(bytes);
             bit = Encoding.ASCII.GetString(bytes);
 
-            while (!bit.Contains("\r"))
-            {
-              //Found this wasn't meeded as it only responds with 1 item in item checks
-                        //for (int i = 0; i <= bit.Length - 1; i++)
-                        //{
-                        //    if (bit[i] == '\r') { break; }
-                        //    if (bit[i] != '\0') { outputString.Append(bit[i]); }
-                        //} 
-            }
+            //while (!bit.Contains("\r"))
+            //{
+            //    //Found this wasn't meeded as it only responds with 1 item in item checks
+            //    for (int i = 0; i <= bit.Length - 1; i++)
+            //    {
+            //        if (bit[i] == '\r') { break; }
+            //        if (bit[i] != '\0') { outputString.Append(bit[i]); }
+            //    }
+            //}
             return bit;
            // return outputString.ToString();
         }
